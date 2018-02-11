@@ -1,5 +1,7 @@
 package com.samiamharris.checker.feature.checker;
 
+import com.samiamharris.checker.base.BaseContract;
+
 /**
  * Created by SamIAm on 2/11/18.
  */
@@ -7,15 +9,14 @@ package com.samiamharris.checker.feature.checker;
 public class CheckerContract {
 
 
-    interface View {
+    interface View extends BaseContract.View {
         void setCheckerCountText(String countText);
     }
 
-    interface Presenter {
-        void onResume();
+    interface Presenter extends BaseContract.Presenter<View, Repository> {
     }
 
-    interface Repository {
+    interface Repository extends BaseContract.Repository {
         int getCheckerCount();
     }
 }

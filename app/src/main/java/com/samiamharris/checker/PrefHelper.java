@@ -19,11 +19,11 @@ public abstract class PrefHelper {
 
     // Exposed Methods
 
-    static void setCheckerCount(Integer value) {
+    public static void setCheckerCount(Integer value) {
         setInt(Key.CHECKER_COUNT, value);
     }
 
-    static int getCheckerCount() {
+    public static int getCheckerCount() {
         return getInt(Key.CHECKER_COUNT);
     }
 

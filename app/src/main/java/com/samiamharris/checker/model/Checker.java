@@ -1,4 +1,4 @@
-package com.samiamharris.checker;
+package com.samiamharris.checker.model;
 
 import java.util.Date;
 

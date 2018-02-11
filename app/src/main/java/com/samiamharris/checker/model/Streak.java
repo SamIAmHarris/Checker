@@ -1,4 +1,4 @@
-package com.samiamharris.checker;
+package com.samiamharris.checker.model;
 
 import java.util.Date;
 
@@ -10,5 +10,5 @@ public class Streak {
 
     Date startTime;
     Date endTime;
-    
+
 }

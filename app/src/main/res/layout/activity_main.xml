@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.samiamharris.checker.MainActivity">
+    tools:context="com.samiamharris.checker.feature.checker.CheckerActivity">
 
     <TextView
         android:id="@+id/count_text_view"

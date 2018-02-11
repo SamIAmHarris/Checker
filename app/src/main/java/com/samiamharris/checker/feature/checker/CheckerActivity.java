@@ -11,9 +11,6 @@ public class CheckerActivity extends BaseActivity<CheckerContract.View, CheckerC
 
     TextView countTextView;
 
-    CheckerContract.Presenter presenter;
-    CheckerContract.Repository repository;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +35,6 @@ public class CheckerActivity extends BaseActivity<CheckerContract.View, CheckerC
 
     @Override
     protected CheckerContract.Repository initRepository() {
-        if (repository == null) {
-            repository = new CheckerRepository();
-        }
-        return repository;
+        return new CheckerRepository();
     }
 }

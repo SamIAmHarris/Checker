@@ -18,7 +18,6 @@ public abstract class BaseActivity<V extends BaseContract.View, P extends BaseCo
 
     private final LifecycleRegistry lifecycleRegistry = new LifecycleRegistry(this);
     protected P presenter;
-    protected R repository;
 
     @SuppressWarnings("unchecked")
     @CallSuper
